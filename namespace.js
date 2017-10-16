@@ -6,9 +6,9 @@ var IUSI0001= {
         box.textContent = "IUSI0001";
         let AllBoxes = document.getElementById('boxes');
         AllBoxes.appendChild(box);
-        box.addEventListener('click' , colorDiv);
-        box.addEventListener('mouseover' , highlight);
-        box.addEventListener('mouseout' , highlight);
+        box.addEventListener('click', colorDiv);
+        box.addEventListener('mouseover', highlight);
+        box.addEventListener('mouseout', highlight);
         function colorDiv(ev){
             box.style.backgroundColor = "blue";
             box.style.borderColor = "red";
