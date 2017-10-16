@@ -7,18 +7,14 @@ var IUSI0001= {
         let boxes = document.getElementById('boxes');
         boxes.appendChild(box);
         div.addEventListener('click' , colorDiv);
-        div.addEventListener('mouseover' , Highlight);
-        div.addEventListener('mouseout' , undoHighlight);
+        div.addEventListener('mouseover' , highlight);
+        div.addEventListener('mouseout' , highlight);
         function colorDiv(ev){
             let target = ev.currentTarget;
             target.style.backgroundColor = "blue";
             target.style.borderColor = "red";
         }
-        function Highlight(ev) {
-            ev.currentTarget.classList.toggle('highlight');
-        }
-
-        function undoHighlight(ev) {
+        function highlight(ev) {
             ev.currentTarget.classList.toggle('highlight');
         }
     }
