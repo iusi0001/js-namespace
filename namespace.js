@@ -10,8 +10,8 @@ var IUSI0001 = {
         box.addEventListener("mouseover" , highlight);
         box.addEventListener("mouseout" , highlight);
         function colorDiv(ev) {
-            box.style.backgroundColor = "blue";
-            box.style.borderColor = "red";
+            box.style.backgroundColor = "white";
+            box.style.borderColor = "blue";
         }
         function highlight(ev) {
             box.classList.toggle("highlight");
